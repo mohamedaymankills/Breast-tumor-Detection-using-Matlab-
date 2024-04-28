@@ -1,10 +1,13 @@
 # Breast Tumor Detection using MATLAB Image Processing Techniques
+
+![1](https://github.com/mohamedaymankills/Breast-tumor-Detection-using-Matlab-/blob/main/images/all.jpg)
 # Overview:
 Breast cancer remains one of the most prevalent forms of cancer worldwide, making early detection crucial for effective treatment.
 This project endeavors to develop an automated system for the detection of breast tumors using MATLAB and advanced image processing techniques. 
 By leveraging the power of digital image analysis, our goal is to enhance the accuracy, efficiency, and accessibility of breast cancer diagnosis,
 potentially improving patient outcomes and reducing mortality rates associated with this disease.
 
+![2](https://github.com/mohamedaymankills/Breast-tumor-Detection-using-Matlab-/blob/main/images/1.jpg)
 # Key Features:
 Image Preprocessing: Our system incorporates sophisticated preprocessing techniques to enhance the quality of breast images, including noise reduction, contrast enhancement, and normalization, ensuring optimal input for subsequent analysis.
 Segmentation Algorithms: Leveraging state-of-the-art segmentation algorithms such as thresholding, region growing, and active contours, our system identifies and isolates suspicious areas within breast images that may indicate the presence of tumors.
