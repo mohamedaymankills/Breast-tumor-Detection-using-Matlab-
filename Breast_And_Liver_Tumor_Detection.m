@@ -4,8 +4,8 @@
 choice = menu ('Choose Tumor Type','LIVER','BREAST' );
 
 if choice==1 
-    % Load your mammography image
-image = imread('C:\Users\Mohamed\Desktop\liver\liver_00000.jpg');
+    % Load your CT scan image
+image = imread('C:\..........................');
 
 % Convert black pixels to white pixels
 % black_pixels = image(:,:,1) == 0 & image(:,:,2) == 0 & image(:,:,3) == 0;
@@ -69,16 +69,16 @@ end
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+% This code is not effective for (dense tissues )
 
 %%%%%%% BREAST %%%%%
 
 
 
 else if choice== 2
-    % Read the CT scan image
+    % Read the Mammogram scan image
 % Read the image
-image = imread('C:\Breast Cancer Detector Project\desctop\New folder (4)\Breast Cancer Image CDC.jpg');
+image = imread('C:\.................................');
 
 % Get the dimensions of the image
 [rows, cols, ~] = size(image);
@@ -118,19 +118,24 @@ gray_image = rgb2gray(image_without_top_left);
 % imshowpair(fs , A , 'montage');
 
 % Thresholding to segment potential cancerous regions
+
 threshold_value = 150; % Example threshold value
 binary_image =   gray_image > threshold_value    ;
 
 % Fill small holes in the binary image
+
 binary_image = imfill(binary_image, 'holes');
 
 % Remove small objects (noise) from the binary image
+
 binary_image = bwareaopen(binary_image, 100);
 
 % Label connected components in the binary image
+
 [labeled_image, num_regions] = bwlabel(binary_image);
 
 % If there are detected regions, assume cancer is present
+
 if num_regions > 0
     fprintf('Cancer is detected.\n');
 else
@@ -138,10 +143,12 @@ else
 end
 
 % Display the original image with detected regions overlaid
+
 imshow(image);
 hold on;
 
 % Outline the detected regions (optional)
+
 boundaries = bwboundaries(labeled_image);
 for k = 1 : length(boundaries)
     boundary = boundaries{k};
