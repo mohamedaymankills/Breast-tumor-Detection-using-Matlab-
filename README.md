@@ -16,7 +16,7 @@ Classification: Employing machine learning algorithms, including support vector 
 User Interface: Our user-friendly interface facilitates seamless interaction with the detection system, allowing users to upload breast images, visualize detection results, 
 and access diagnostic information in an intuitive manner.
 
-
+![3](https://github.com/mohamedaymankills/Breast-tumor-Detection-using-Matlab-/blob/main/2.jpg)
 # How to Use:
 Clone Repository: Clone this repository to your local machine using the provided link.
 Install MATLAB: Ensure you have MATLAB installed on your system. This project is compatible with MATLAB versions X and above.
